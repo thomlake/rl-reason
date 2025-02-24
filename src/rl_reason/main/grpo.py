@@ -108,7 +108,7 @@ def grpo_function(
         }
 
     # convert our dataset to the r1 prompt
-    dataset = dataset.map(lambda x: generate_r1_prompt(x["nums"], x["answer"]))
+    dataset = dataset.map(lambda x: generate_r1_prompt(x["nums"], x["target"]))
 
     # split the dataset into train and test
     train_test_split = dataset.train_test_split(test_size=0.1)
