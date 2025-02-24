@@ -85,7 +85,7 @@ def get_countdown_reward(scale: float = 1.0):
                 # If evaluation fails, reward is 0
                 rewards.append(0.0)
 
-            return rewards
+        return rewards
 
     return countdown_reward
 
